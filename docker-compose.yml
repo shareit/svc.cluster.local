@@ -5,6 +5,7 @@ services:
     image: nginx:latest
     ports:
       - 80:80
+      - 8000:8000
     volumes:
       - ./app1:/var/www/app1
       - ./app2:/var/www/app2
