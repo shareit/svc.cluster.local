@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  mainweb:
+    image: nginx:latest
+    ports:
+      - 80:80
+    volumes:
+      - ./app1:/var/www/app1
+      - ./app2:/var/www/app2
+      - ./app3:/var/www/app3
+      - ./site.conf:/etc/nginx/conf.d/site.conf
